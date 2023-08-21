@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+// import Two from "./Two";
+// import Three from "./Three";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+// import Footer from "./MyComponents/Footer";
+import Header from "./MyComponents/Header";
+// import Todos from "./MyComponents/Todos";
+import { useState } from "react";
+
+
+function One(){
+
+  // let [Count, setCount] = useState(3);
+  let [count, setCount] = useState(3)
+
+  // let Count = 15;
+
+  const added=()=>{
+    console.log("Value Added",count)
+    // Count = Count + 1;
+    setCount(count + 1)
+
+  }
+
+  function remove(){
+    console.log("Value Removed", count);
+    count = count - 1;
+    setCount(count)
+
+  }
+
+ 
+  return(
+    <>
+    <Header about="About2"/>
+    <div className="container">
+    <h2>React</h2>
+    <h3>Value Count:{count}</h3>
+
+    <button onClick={added} >ADD</button> <br/>
+    <button onClick={remove} >REMOVE</button>
     </div>
-  );
+ 
+    </>
+   
+  )
 }
 
-export default App;
+export default One;
