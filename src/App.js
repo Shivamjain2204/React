@@ -1,18 +1,10 @@
-// import Two from "./Two";
-// import Three from "./Three";
-
-// import Footer from "./MyComponents/Footer";
-import Header from "./MyComponents/Header";
-// import Todos from "./MyComponents/Todos";
 import { useState } from "react";
-
+import Header from "./MyComponents/Header";
+// import Footer from "./MyComponents/Footer";
 
 function One(){
 
-  // let [Count, setCount] = useState(3);
   let [count, setCount] = useState(3)
-
-  // let Count = 15;
 
   const added=()=>{
     console.log("Value Added",count)
@@ -28,7 +20,6 @@ function One(){
 
   }
 
- 
   return(
     <>
     <Header about="About2"/>
