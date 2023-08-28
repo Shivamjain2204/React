@@ -4,7 +4,7 @@ import Header from "./MyComponents/Header";
 
 function One(){
 
-  let [count, setCount] = useState(3)
+  let [count, setCount] = useState(0)
 
   const added=()=>{
     console.log("Value Added",count)
