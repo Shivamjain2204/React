@@ -8,7 +8,7 @@ function One(){
   return(
     <>
     <Header about="About2"/>
-    {/* <Count/> */}
+    <Count/>
     <BgChanger/>
     
   
