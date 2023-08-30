@@ -9,12 +9,8 @@ function One(){
     <>
     <Header about="About2"/>
     <Count/>
-    <BgChanger/>
-    
-  
-    
+    <BgChanger/>  
     </>
-   
   )
 }
 
