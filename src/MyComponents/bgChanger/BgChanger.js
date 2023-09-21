@@ -4,8 +4,11 @@ import "./bgChanger.css";
 const BgChanger = () => {
     const [color, setColor] = useState("olive")
   return (
+
     <div className='background' style={{backgroundColor: color}} >
+
       <div className='bar'>
+
         <div className='bar-inner'>
           
               <button onClick={()=> setColor("red")} className='button' style={{backgroundColor: "red"}} >Red</button>
@@ -25,7 +28,9 @@ const BgChanger = () => {
               <button onClick={()=> setColor("gray")} className='button' style={{backgroundColor: "gray"}} >Gray</button>
 
         </div>
+        
       </div>
+
     </div>  
   ) 
 }
