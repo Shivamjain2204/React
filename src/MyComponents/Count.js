@@ -15,6 +15,11 @@ function Count() {
       count = count - 1;
       setCount(count)
     }
+
+    function reset(){
+      setCount(0)
+    }
+
   return (
     <>
     <div className="container">
@@ -22,7 +27,9 @@ function Count() {
     <h3>Value Count:{count}</h3>
 
     <button onClick={added} >ADD</button> <br/>
-    <button onClick={remove} >REMOVE</button>
+    <button onClick={remove} >REMOVE</button> <br/>
+    <button onClick={reset} >RESET</button> 
+
     </div>
 
     
